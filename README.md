@@ -20,7 +20,6 @@ enter the received tokens in gigaLiterature.py
 </code></pre>
 
 <h4> 3. Run you Bot </h4>
-<pre><code>
-cd gigaLiterature
+<pre><code>cd gigaLiterature
 python3 gigaLiterature.py
 </code></pre>
