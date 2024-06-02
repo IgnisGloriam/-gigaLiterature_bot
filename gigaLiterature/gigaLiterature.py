@@ -36,14 +36,25 @@ def add_request(user_id, new_request):
 @bot.message_handler(commands=['help', 'start'])
 async def send_welcome(message):
     await bot.reply_to(message, """\
-Привет, я умный бот-литературовед, который помогает пользователю найти интересные книги!\
+Привет, я умный бот-литературовед, который помогает пользователю найти интересные книги!\n
+Чем я могу вам помочь?
+""")
+
+@bot.message_handler(commands=['clear'])
+async def send_clear(message):
+    userId = message.from_user.id
+    user_requests[userId]['requests'].clear()
+    add_request(userId, initial_request)
+    await bot.reply_to(message, """\
+    Диалог очищен!\n
+Привет, я умный бот-литературовед, который помогает пользователю найти интересные книги!\n
 Чем я могу вам помочь?
 """)
 
 
 # Handle all other messages with content_type 'text' (content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
-async def echo_message(message):
+async def send_message(message):
     userId = message.from_user.id
     add_request(userId, HumanMessage(content=message.text))
     print(userId, 'USER: ', message.text)
@@ -51,7 +62,7 @@ async def echo_message(message):
 
     add_request(userId, res)
     print(userId, 'BOT: ', res.content)
-    #print(user_requests)
+    print(user_requests)
     await bot.reply_to(message, res.content)
 
 
