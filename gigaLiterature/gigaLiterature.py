@@ -46,12 +46,12 @@ async def send_welcome(message):
 async def echo_message(message):
     userId = message.from_user.id
     add_request(userId, HumanMessage(content=message.text))
-    #print(userId, 'USER: ', message.text)
+    print(userId, 'USER: ', message.text)
     res = chat(user_requests[userId]['requests'])
 
     add_request(userId, res)
-    #print(userId, 'BOT: ', res.content)
-    print(user_requests)
+    print(userId, 'BOT: ', res.content)
+    #print(user_requests)
     await bot.reply_to(message, res.content)
 
 
