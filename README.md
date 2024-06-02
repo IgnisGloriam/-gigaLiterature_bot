@@ -1,8 +1,9 @@
 <h1 align="center">Hi there, I'm <a href="https://t.me/gigaLiterature_bot" target="_blank">gigaLiterature bot</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">I'm ready to help you choose a book or movie for the evening, as well as just suggest any other idea. You can find me at this link <a href="https://t.me/gigaLiterature_bot" target="_blank">https://t.me/gigaLiterature_bot</a> 
+<h3 align="center">I'm ready to help you choose a book or movie for the evening, as well as just suggest any other idea.  <br/>
+  You can find me at this link <a href="https://t.me/gigaLiterature_bot" target="_blank">https://t.me/gigaLiterature_bot</a>   <br/>
 
-
+Or you can create your own bot
 <h2 align="left">Creating your own bot: </h2>
 
 <h4> 1. Instalation </h4>
