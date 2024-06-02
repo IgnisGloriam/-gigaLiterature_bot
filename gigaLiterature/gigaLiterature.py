@@ -43,6 +43,7 @@ async def send_welcome(message):
 @bot.message_handler(commands=['clear'])
 async def send_clear(message):
     userId = message.from_user.id
+    add_request(userId, initial_request)
     user_requests[userId]['requests'].clear()
     add_request(userId, initial_request)
     await bot.reply_to(message, """\
