@@ -20,7 +20,7 @@ visit https://developers.sber.ru/studio/workspaces/
 enter the received tokens in gigaLiterature.py
 </code></pre>
 
-<h4> 3. Run you Bot </h4>
+<h4> 3. Run you Bot (Just run the file gigaLiterature.py) </h4>
 <pre><code>cd gigaLiterature
 python3 gigaLiterature.py
 </code></pre>
