@@ -8,6 +8,7 @@ Or you can create your own bot (like gigaLiterature bot, but with your own token
 
 <h4> 1. Instalation </h4>
 <pre><code>git clone https://github.com/IgnisGloriam/-gigaLiterature_bot
+pip install pyTelegramBotAPI
 pip install gigachain
 pip install gigachat
 </code></pre>
