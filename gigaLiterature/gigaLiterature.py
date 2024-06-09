@@ -76,4 +76,4 @@ async def send_message(message):
     await bot.reply_to(message, res.content)
 
 
-asyncio.run(bot.polling())
+asyncio.run(bot.infinity_polling())
