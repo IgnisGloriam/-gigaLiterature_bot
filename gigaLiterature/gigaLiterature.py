@@ -1,8 +1,9 @@
 from telebot.async_telebot import AsyncTeleBot
 import asyncio
 bot = AsyncTeleBot('') #TelegramToken
+
 from langchain.schema import HumanMessage, SystemMessage
-from langchain.chat_models.gigachat import GigaChat
+from langchain_community.chat_models.gigachat import GigaChat
 
 
 # Авторизация в сервисе GigaChat
